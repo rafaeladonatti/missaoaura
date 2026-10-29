@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Aura</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Missão Aura</h1>
+
+    <form id="formulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <br><br>
+
+        <label for="nascimento">Data de nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento" required>
+
+        <h3>1. Qual ambiente você prefere?</h3>
+        <select id="p1" required>
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="3">Floresta</option>
+            <option value="1">Deserto</option>
+            <option value="2">Oceano</option>
+            <option value="4">Montanhas</option>
+        </select>
+
+        <h3>2. O que você mais gosta de fazer?</h3>
+        <select id="p2" required>
+            <option value="" selected disabled>Selecione uma opção...</option>
+            <option value="3">Explorar</option>
+            <option value="2">Estudar</option>
+            <option value="4">Ajudar pessoas</option>
+            <option value="1">Construir coisas</option>
+        </select>
+
+        <h3>3. Como você resolve problemas?</h3>
+        <select id="p3" required>
+            <option value="" selected disabled>Selecione uma opção...</option>
+            <option value="1">Procuro uma solução rápida</option>
+            <option value="4">Analiso com calma</option>
+            <option value="2">Peço ajuda</option>
+            <option value="3">Crio uma ideia nova</option>
+        </select>
+
+        <h3>4. Qual habilidade você gostaria de ter?</h3>
+        <select id="p4" required>
+            <option value="" selected disabled>Selecione uma opção...</option>
+            <option value="3">Coragem</option>
+            <option value="2">Inteligência</option>
+            <option value="4">Liderança</option>
+            <option value="1">Criatividade</option>
+        </select>
+
+        <br><br>
+        <button type="submit">Descobrir meu perfil</button>
+    </form>
+
+    <section id="resultado" hidden>
+        <h2 id="mensagem"></h2>
+        <p id="idade"></p>
+        <h2 id="perfil"></h2>
+        <p id="categoria"></p>
+        <p id="descricao"></p>
+        <img id="imagem" src="" alt="" hidden>
+        <p id="recomendacao"></p>
+        <button type="button" id="refazer">Refazer teste</button>
+    </section>
+</body>
+</html>
